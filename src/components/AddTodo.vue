@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form @submit="addTodo">
+    <form @submit="addTodo" class="todo-form">
       <input type="text" v-model="title" placeholder="Add Todo">
       <input type="submit" value="submit" class="submit-btn">
     </form>
@@ -58,11 +58,16 @@ input[type="submit"] {
   margin-top: 40px;
   background-color: #687eda; /* Green */
   border: none;
+  border-radius: 15px;
   color: white;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.todo-form {
+  margin-top: 15px;
 }
 </style>
