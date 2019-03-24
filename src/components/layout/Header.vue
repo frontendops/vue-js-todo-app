@@ -10,8 +10,9 @@ export default {
 
 <style scoped>
 header {
-  background-color: darkgray;
+  background-color: #4caf50;
   color: white;
   font-size: 1.6em;
+  padding: 20px 0px;
 }
 </style>

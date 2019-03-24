@@ -2,8 +2,10 @@
   <div>
     <form @submit="addTodo">
       <input type="text" v-model="title" placeholder="Add Todo">
-      <input type="submit" value="submit" class="btn">
+      <input type="submit" value="submit" class="submit-btn">
     </form>
+
+    <button class="clear-btn" @click="$emit('clear-all')">Clear All</button>
   </div>
 </template>
 
@@ -25,7 +27,9 @@ export default {
         title: this.title,
         completed: false
       };
+
       this.$emit("add-todo", newTodo);
+      this.title = "";
     }
   }
 };
@@ -41,5 +45,24 @@ input[type="text"] {
 }
 input[type="submit"] {
   flex: 2;
+}
+
+.submit-btn {
+  background-color: #343f6d;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.clear-btn {
+  margin-top: 40px;
+  background-color: #687eda; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 </style>

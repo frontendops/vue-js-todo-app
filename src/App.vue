@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <Todos v-bind:todos="todos" v-on:del-todo="handleTodoDel"/>
-    <AddTodo v-on:add-todo="handleAddTodo"/>
+    <AddTodo v-on:add-todo="handleAddTodo" v-on:clear-all="clearAll"/>
   </div>
 </template>
 
@@ -47,6 +47,9 @@ export default {
     },
     handleAddTodo(newTodo) {
       this.todos = [...this.todos, newTodo];
+    },
+    clearAll() {
+      this.todos = [];
     }
   }
 };
@@ -59,7 +62,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 .btn {
