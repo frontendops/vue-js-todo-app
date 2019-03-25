@@ -38,6 +38,8 @@ export default {
 <style scoped>
 form {
   display: flex;
+  max-width: 600px;
+  margin: 0 auto;
 }
 input[type="text"] {
   flex: 10;
@@ -68,6 +70,6 @@ input[type="submit"] {
 }
 
 .todo-form {
-  margin-top: 15px;
+  margin-top: 35px;
 }
 </style>

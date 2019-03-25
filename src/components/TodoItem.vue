@@ -26,6 +26,9 @@ export default {
 .del {
   border-radius: 100px;
   background-color: red;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
   color: white;
 }
 
@@ -39,6 +42,8 @@ export default {
   margin: 0 auto;
   margin-top: 15px;
   justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .item.is-complete {
