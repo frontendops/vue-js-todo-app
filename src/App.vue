@@ -3,6 +3,7 @@
     <Header/>
     <Todos v-bind:todos="todos" v-on:del-todo="handleTodoDel"/>
     <AddTodo v-on:add-todo="handleAddTodo" v-on:clear-all="clearAll"/>
+    <TotalTasks/>
   </div>
 </template>
 
@@ -12,13 +13,15 @@
 import Todos from "./components/Todos";
 import Header from "./components/layout/Header";
 import AddTodo from "./components/AddTodo";
+import TotalTasks from "./components/TotalTasks";
 
 export default {
   name: "app",
   components: {
     Todos,
     Header,
-    AddTodo
+    AddTodo,
+    TotalTasks
   },
   data() {
     return {
