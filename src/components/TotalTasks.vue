@@ -17,11 +17,9 @@
 <script>
 export default {
   name: "TotalTasks",
-  props: ["total"],
+  props: ["total", "finished"],
   data() {
-    return {
-      finished: 2
-    };
+    return {};
   }
 };
 </script>

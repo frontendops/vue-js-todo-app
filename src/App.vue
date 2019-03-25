@@ -3,7 +3,10 @@
     <Header/>
     <Todos v-bind:todos="todos" v-on:del-todo="handleTodoDel"/>
     <AddTodo v-on:add-todo="handleAddTodo" v-on:clear-all="clearAll"/>
-    <TotalTasks v-bind:total="todos.length"/>
+    <TotalTasks
+      v-bind:total="todos.length"
+      v-bind:finished="todos.filter(todo => todo.completed === true).length"
+    />
   </div>
 </template>
 
