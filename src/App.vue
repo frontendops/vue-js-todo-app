@@ -3,7 +3,7 @@
     <Header/>
     <Todos v-bind:todos="todos" v-on:del-todo="handleTodoDel"/>
     <AddTodo v-on:add-todo="handleAddTodo" v-on:clear-all="clearAll"/>
-    <TotalTasks/>
+    <TotalTasks v-bind:total="todos.length"/>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
         {
           id: 1,
           title: "Shower",
-          completed: false
+          completed: true
         },
         {
           id: 2,
