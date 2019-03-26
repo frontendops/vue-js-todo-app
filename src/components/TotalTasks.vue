@@ -3,6 +3,12 @@
     <div class="title">Total tasks finished</div>
     <svg viewBox="0 0 36 36" class="circular-chart">
       <path
+        class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      ></path>
+      <path
         class="circle"
         v-bind:stroke-dasharray="stroke"
         d="M18 2.0845
@@ -67,6 +73,12 @@ export default {
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
 }
 
 @keyframes progress {
