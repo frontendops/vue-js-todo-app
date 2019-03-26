@@ -45,6 +45,9 @@ export default {
           completed: false
         }
       ]
+      //stroke: "33 100"
+      // firstNum: 33,
+      // secondNum: 100
     };
   },
   methods: {
@@ -57,7 +60,21 @@ export default {
     clearAll() {
       this.todos = [];
     }
+    // findStroke() {
+    //   let firstNum = this.todos.filter(todo => todo.completed === true).length;
+    //   let secondNum = this.todos.length;
+    //   this.stroke = `${(firstNum / secondNum).toFixed(2) * 100} 100`;
+    // }
   }
+  // watch: {
+  //   todos: function() {
+  //     let num1 = this.todos.filter(todo => todo.completed === true).length;
+  //     let num2 = this.todos.length;
+  //     //this.stroke = `${(firstNum / secondNum).toFixed(2) * 100} 100`;
+  //     this.firstNum = num1;
+  //     this.secondNum = num2;
+  //   }
+  // }
 };
 </script>
 
