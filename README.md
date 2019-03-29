@@ -1,29 +1,20 @@
-# first-app
+# Vue productivity tracker
+
+## Live demo
+https://vue-task-manager.herokuapp.com/
+
+## About
+This app takes all todos during the day and checks how many you have completed, 
+circular percentage chart inspired by `Duolingo` adjusts whenever user completes, adds and removes tasks.
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### run the project on your local machine
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
